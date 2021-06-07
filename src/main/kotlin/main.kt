@@ -1,11 +1,16 @@
-import kotlin.random.Random
-
 fun main() {
     //Ejercicio 1
     for (numero in Ejercicio_1.array){
-        print("$numero, ")
+        print("$numero ")
     }
     println()
     //Ejercicio 2
-    print(Ejercicio_2.showArray())
+    val arrayNumeros = Ejercicio_2.arreglo
+    for (numero in arrayNumeros){
+        print("$numero ")
+    }
+    println()
+    
+    //Ejercicio 3
+    Ejercicio_3().arrayNumeros(Ejercicio_2.arreglo).forEach({print("$it ")})
 }
